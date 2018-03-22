@@ -12,7 +12,7 @@
   </h1>
   <body>
     <main>  
-      <h1 id="instructions">Guess a random number between 1 and 100. If you win, I'll make the odds a little more interesting</h1>
+      <h1 role="banner" id="instructions">Guess a random number between 1 and 100. If you win, I'll make the odds a little more interesting</h1>
       <div class="form">
         <input type="text" id="guessField" maxLength="3" class="guessField" min="1" max="100" placeholder="Enter Your Guess">
       </div>
@@ -23,18 +23,21 @@
       </div>
       <div class="grid-container"
       <div class="resultParas grid-item item1">
-        <div class="lastResult"></div><br>
-        <div class="lowOrHi"></div><br>
       </div>
       </div
     </main>
     <fieldset>
-    <footer id="customization">
-      <div class="guesses"></div><br>
-      <input id="min" type="button" class="newMin" value="Set Minimum"><input type="number" placeholder="Enter minimum here">
-      <input type="button" class="newMax"  value="Set Maximum"><input type="number" id="max" placeholder="Enter maximum here">
+    <footer role="contentinfo" id="customization">
+      <div role="form" class="guesses"></div>
+      <br>
+      <button id="newMax">Set Limits</button>
+      <input type="number" id="min" placeholder="Enter minimum here"> 
+      <input type="number" id="max" placeholder="Enter maximum here">
+      <div class="lastResult"></div><br>
+      <div class="lowOrHi"></div><br>
       <!-- tie these with a button instead, user will click in field and it'll submit before they enter a number -->
     </footer>
+    <img src="images/porg.jpg" alt="shocked Porg from Star Wars" id="myImage">
     </fieldset>
     <script type="text/javascript" src="index.js"></script>
   </body>
